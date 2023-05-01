@@ -40,8 +40,11 @@ const Home = () => {
 
   return (
     <Box m={4}>
-      <Heading as="h1" size="xl">
-        MultiSelect Component Demo
+      <Heading as="h1" size="lg" mb={2}>
+        Components Demo
+      </Heading>
+      <Heading as="h2" size="md" mb={4}>
+        MultiSelect
       </Heading>
       <MultiSelect title="Interests" options={interestOptions} onSave={onSave} scheme="blue" />
 

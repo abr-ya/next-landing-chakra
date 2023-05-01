@@ -1,14 +1,14 @@
 "use client";
 
-import { Box, Heading } from "@chakra-ui/react";
+import { ClientsSpeak, Hero, Features } from "./features";
 
 const Home = () => {
   return (
-    <Box m={4}>
-      <Heading as="h1" size="xl">
-        Hello, Next.js 13 + Chakra UI!
-      </Heading>
-    </Box>
+    <>
+      <Hero />
+      <Features />
+      <ClientsSpeak />
+    </>
   );
 };
 

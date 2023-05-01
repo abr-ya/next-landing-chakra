@@ -9,7 +9,6 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Stack,
   StackDivider,
   ThemeTypings,
   VStack,
@@ -27,7 +26,14 @@ interface IMultiSelect {
   titleClear?: string;
 }
 
-const MultiSelect: FC<IMultiSelect> = ({ title, titleClear, titleSave, onSave, options: start, scheme = "red" }) => {
+const MultiSelect: FC<IMultiSelect> = ({
+  title,
+  titleClear,
+  titleSave,
+  onSave,
+  options: start,
+  scheme = "red",
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [options, setOptions] = useState<ISelectValue[]>(start);
 
@@ -54,7 +60,15 @@ const MultiSelect: FC<IMultiSelect> = ({ title, titleClear, titleSave, onSave, o
   };
 
   const renderFilter = () => (
-    <Box borderRadius="12px" zIndex={10000} position="absolute" top="50px" left={0} backgroundColor="white" w="320px">
+    <Box
+      borderRadius="12px"
+      zIndex={10000}
+      position="absolute"
+      top="50px"
+      left={0}
+      backgroundColor="white"
+      w="320px"
+    >
       <VStack divider={<StackDivider borderColor="gray.200" />} spacing={0} align="stretch">
         {options.map(({ value, label, select }, i) => (
           <Checkbox

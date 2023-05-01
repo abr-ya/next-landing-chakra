@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ISelectValue } from "../interfaces";
-import MultiSelect from "../components/MultiSelect/MultiSelect";
+import MultiSelect from "../components/MultiSelect";
 
 const Home = () => {
   const interestOptions: ISelectValue[] = [

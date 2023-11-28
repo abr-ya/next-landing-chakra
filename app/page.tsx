@@ -1,5 +1,3 @@
-"use client";
-
 import { ClientsSpeak, Hero, Features } from "./features";
 
 const Home = () => {
